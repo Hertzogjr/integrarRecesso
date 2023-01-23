@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculo Recesso | Integrar</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon/favicon-32x32.png" type="image/x-icon">
+
+  <!-- Link bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+</head>
+
+<!-- Link css -->
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="header-container">
+      <div class="header-links-container container">
+        <ul>
+          <li>
+            <a href="https://www.integrar-rs.com.br/blog/" class="hover">Blog</a>
+          </li>
+          <li>
+            <a href="https://www.integrar-rs.com.br/contato/" class="hover">Contato</a>
+          </li>
+          <li>
+            <a href="https://sistema.integrar-rs.com.br/index.php/2013-02-19-19-43-55/2013-03-04-15-38-03/candidato-quero-me-cadastrar.html" class="header-button" target="_blank">Candidato</a>
+          </li>
+          <li>
+            <a href="https://sistema.integrar-rs.com.br/index.php/empresa/quero-cadastrar-minha-empresa.html" class="header-button" target="_blank">Empresa</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="links-container">
+      <div class="logo-links-container container">
+        <div class="logo-links">
+          <div class="logo-container">
+            <img src="./images/logo_integrar.png" alt="">
+          </div>
+  
+          <div class="link-container">
+            <ul>
+              <li><a class="hover" href="https://www.integrar-rs.com.br">Home</a></li>
+              <li><a class="hover" href="https://www.integrar-rs.com.br/integrar-rs/">Quem somos</a></li>
+              <li><a class="hover" href="">Termo de Recesso</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="main-content container">
+      <div class="main-image-content">
+        <img src="./images/recesso.jpg" alt="">
+      </div>
+      <div class="form-container container">
+        <form action="">
+          <div class="mb-3">
+            <label for="startDate" class="form-label">Data de inicio</label>
+            <input type="date" class="form-control" id="startDate" aria-describedby="startDateHelp">
+            <div id="startDateHelp" class="form-text">Digite a data de início do contrato.</div>
+          </div>
+          <div class="mb-3">
+            <label for="endDate" class="form-label">Data de término</label>
+            <input type="date" class="form-control" id="endDate" aria-describedby="endDateHelp">
+            <div id="endDateHelp" class="form-text">Digite a data de término do contrato.</div>
+          </div>
+          <div class="mb-3">
+            <label for="salary" class="form-label">Valor da bolsa auxilio</label>
+            <input type="text" class="form-control" id="salary" placeholder="R$0,00" aria-describedby="salaryHelp">
+            <div id="salaryHelp" class="form-text">Digite o valor da bolsa auxilio mensal.</div>
+          </div>
+          <div class="mb-3 text-center">
+            <button class="btn btn-primary" type="submit" id="calculate">Calcular</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <div class="result-container hidden">
+      <div class="result-container-items container">
+        <div class="result-container-item1">
+          <ul>
+            <li>Total de dias estagiados: <span id="workedDays"></span></li>
+            <li>Valor da bolsa auxlio por dia: <span id="salaryPerDay"></span></li>
+          </ul>
+  
+        </div>
+        <div class="result-container-item2">
+          <ul>
+            <li>Quantidade de dias para gozo: <span id="vacationQuantity"></span></li>
+            <li>Valor de recesso previsto <span id="vacationValue"></span></li>
+          </ul>
+  
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="contact-us">
+      <div class="contact container">
+        <h1>QUER SABER MAIS SOBRE OS NOSSOS SERVIÇOS?</h1>
+        <h2>FALE COM UM DE NOSSOS CONSULTORES.</h2>
+        <button class="button text-center"><a href="https://www.integrar-rs.com.br/contato/">Agende uma
+            reunião</a></button>
+      </div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+  
+  
+</body>
+
+</html>
